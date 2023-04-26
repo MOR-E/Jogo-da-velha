@@ -10,7 +10,7 @@
     <title>Jogo da velha</title>
 </head>
 <body>
-   <!--CABEÇALHO-->
+   <!------------CABEÇALHO---------------->
     <header>
         <div class="container">
             <nav class="navbar navbar-expand-lg fixed-top" id="cabecalho">
@@ -19,25 +19,36 @@
         </div>
     </header>
 
-    <!--NOME DOS JOGADORES E PONTOS-->
-
     <div class="container" id="players">
         <div class="card">
+        <!----------------NOME DO JOGADOR 1-------------->
             <div class="card-header">
-                <h3>Jogador 1</h3>
+                <h3 id="nome_jogador1">Jogador 1</h3>
             </div>
-            <div class="card-body">
-                    <input type="text" class="form-control" id="jogador1">
-                    <button class="btn btn-success" onclick='document.getElementById("salvo1").innerHTML = "Salvo!"'>Salvar</button>
+            <div class="card-body"> 
+                    <input type="text" class="form-control" id="jogador_inp" onblur="getVal()">
+                    <button type="button" class="btn btn-success" id="botao_salvar1">Salvar</button>
                     <P id="salvo1"></P>
             </div>
         </div>
 
-        <div id="ponto"></div>
-
+        <!----------------PONTOS------------->
+        <div class="pontuacao">
+            <div ><h2 id="pontuacao_nome1"></h2></div>
+            <div class="pontuacao_nome2"><h2></h2></div>
+            <div id="pontuacao_ponto1">0</div>
+            <div id="pontuacao_ponto2">0</div>
+            <div class="pontuacao_controle">
+                <button id="somar_jogador1">+</button>
+            </div>
+            <div class="pontuacao_controle">
+                <button id="somar_jogador2">+</button>
+            </div>
+            </div>
+         <!----------------NOME DO JOGADOR 2-------------->
         <div class="card">
             <div class="card-header">
-                <h3>Jogador 2</h3>
+                <h3 id="nome_jogador2">Jogador 2</h3>
             </div>
             <div class="card-body">
                     <input type="text" class="form-control" id="jogador2">
@@ -65,9 +76,7 @@
                 </div>
 
 
-    <script src="../public/js/main.js" type="module">
-
-    </script>
+    <script src="../public/js/main.js" type="module"></script>
 
 </body>
 <footer>

@@ -31,31 +31,11 @@ footer {
     width: 300px;
 }
 
-.pontuacao_nome, .pontuacao_ponto {
+.pontuacao_nome, #pontuacao_ponto1, #pontuacao_ponto2 {
     padding: 10px;
     text-align: center;
 }
 
-.pontuacao_ponto {
+#pontuacao_ponto1, #pontuacao_ponto2 {
     font-size: 5em;
-}
-
-.pontuacao_controle {
-    display: flex;
-}
-
-.pontuacao_controle_botao {
-    flex-grow: 1;
-    border: none;
-    background-color: #eee;
-    cursor: pointer;
-    font-size: 1.2em;
-}
-
-.pontuacao_controle_botao:hover {
-    background-color: aquamarine;
-}
-
-.pontuacao_controle_botao:active {
-    background-color: chartreuse;
 }

@@ -1,17 +1,33 @@
-import pontuacaoclass from "./pontuacaoclass.js";
 
-let pontuacao_jogador1 = 0;
-let pontuacao_jogador2 = 0;
-const ponto = document.querySelector("#ponto");
-const view = new pontuacaoclass(ponto, "jogador1", "jogador2", (direcao, jogador) => {
-    //atualizar o placar
-    const diferenca = direcao === "menos" ? -1 : 1;
+/*----------PLACAR---------*/ 
+let adicionar1 = document.getElementById('somar_jogador1');
+let adicionar2 = document.getElementById('somar_jogador2');
 
-    if (jogador === "um"){
-        pontuacao_jogador1 = Math.max(pontuacao_jogador1 + diferenca, 0);
-    }else {
-        pontuacao_jogador2 = Math.max(pontuacao_jogador2 + diferenca, 0);
-    }
+let int1 = document.getElementById('pontuacao_ponto1');
+let integer1 = 0;
 
-    view.update(pontuacao_jogador1, pontuacao_jogador2);
-});
+let int2 = document.getElementById('pontuacao_ponto2');
+let integer2 = 0;
+
+adicionar1.addEventListener('click', function() {
+    integer1 += 1;
+    int1.innerHTML = integer1;
+})
+
+
+adicionar2.addEventListener('click', function() {
+    integer2 += 1;
+    int2.innerHTML = integer2;
+})
+
+/*-------------MUDAR O NOME DO JOGADOR-----------*/
+
+let pontuacao_nome1 = document.getElementById('pontuacao_nome1');
+let jogador_inp = document.getElementById('jogador_inp');
+let nome_jogador1 = document.getElementById('nome_jogador1');
+
+
+function getVal() {
+    const val = document.querySelector('input').value;
+    console.log(val);
+  }
