@@ -1,4 +1,3 @@
-
 /*----------PLACAR---------*/ 
 let adicionar1 = document.getElementById('somar_jogador1');
 let adicionar2 = document.getElementById('somar_jogador2');
@@ -24,6 +23,18 @@ adicionar2.addEventListener('click', function() {
 
 let pontuacao_nome1 = document.getElementById('pontuacao_nome1');
 let jogador_inp = document.getElementById('jogador_inp');
-let nome_jogador1 = document.getElementById('nome_jogador1');
 
+function mostrarTexto() {
+    var jogador_inp = document.getElementById('jogador_inp').value;
+    var pontuacao_nome1 = document.getElementById('pontuacao_nome1');
+    pontuacao_nome1.innerHTML = jogador_inp ;
+}
 
+let pontuacao_nome2 = document.getElementById('pontuacao_nome1');
+let jogador_inp2 = document.getElementById('jogador_inp');
+
+function mostrarTexto2() {
+    var jogador_inp2 = document.getElementById('jogador_inp2').value;
+    var pontuacao_nome2 = document.getElementById('pontuacao_nome2');
+    pontuacao_nome2.innerHTML = jogador_inp2 ;
+}
