@@ -27,7 +27,3 @@ let jogador_inp = document.getElementById('jogador_inp');
 let nome_jogador1 = document.getElementById('nome_jogador1');
 
 
-function getVal() {
-    const val = document.querySelector('input').value;
-    console.log(val);
-  }
