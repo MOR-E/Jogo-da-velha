@@ -21,20 +21,37 @@ adicionar2.addEventListener('click', function() {
 
 /*-------------MUDAR O NOME DO JOGADOR-----------*/
 
-let pontuacao_nome1 = document.getElementById('pontuacao_nome1');
-let jogador_inp = document.getElementById('jogador_inp');
-
 function mostrarTexto() {
     var jogador_inp = document.getElementById('jogador_inp').value;
     var pontuacao_nome1 = document.getElementById('pontuacao_nome1');
-    pontuacao_nome1.innerHTML = jogador_inp ;
+    pontuacao_nome1.innerHTML = jogador_inp;
 }
-
-let pontuacao_nome2 = document.getElementById('pontuacao_nome1');
-let jogador_inp2 = document.getElementById('jogador_inp');
 
 function mostrarTexto2() {
     var jogador_inp2 = document.getElementById('jogador_inp2').value;
     var pontuacao_nome2 = document.getElementById('pontuacao_nome2');
-    pontuacao_nome2.innerHTML = jogador_inp2 ;
+    pontuacao_nome2.innerHTML = jogador_inp2;
 }
+
+/*-------------CRIANDO O GRID DO JOGO-----------*/
+
+
+var salva_matriz = document.getElementById('salva_matriz');
+var tamanho_matriz = document.getElementById('informa_matriz').value;
+var grid_jogo = document.getElementsByClassName('jogo');
+
+
+
+/*function teste1() {
+
+    salva_matriz.addEventListener('click', function() {
+        for (var i = 0; i < tamanho_matriz; i++) {
+            var botao_do_item = document.createElement('button');
+            botao_do_item.classList.add('estilo_grid');
+            grid_jogo.appendChild(botao_do_item);
+        }
+})
+} */
+
+
+

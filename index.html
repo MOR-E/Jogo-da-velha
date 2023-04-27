@@ -8,7 +8,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../public/css/style.css">
     <title>Jogo da velha</title>
-    
 </head>
 <body>
    <!------------CABEÇALHO---------------->
@@ -22,7 +21,8 @@
 
     <div class="container" id="players">
         <div class="card">
-        <!----------------NOME DO JOGADOR 1-------------->
+
+    <!----------------NOME DO JOGADOR 1-------------->
             <div class="card-header">
                 <h3 id="nome_jogador1">Jogador 1</h3>
             </div>
@@ -32,7 +32,7 @@
             </div>
         </div>
 
-        <!----------------PONTOS------------->
+    <!----------------PONTOS------------->
         <div class="pontuacao">
             <div ><h2 id="pontuacao_nome1"></h2></div>
             <div> <h2 id="pontuacao_nome2"></h2></div>
@@ -41,6 +41,7 @@
                 <button id="somar_jogador1">+</button>
                 <button id="somar_jogador2">+</button>
             </div>
+
          <!----------------NOME DO JOGADOR 2-------------->
         <div class="card">
             <div class="card-header">
@@ -53,29 +54,25 @@
         </div>
     </div>
 
-
-
-
-
-                <!--#gameboard>.box#$*9-->
-                <div class="jogo">
-                    <div class="box" id="0"></div>
-                    <div class="box" id="1"></div>
-                    <div class="box" id="2"></div>
-                    <div class="box" id="3"></div>
-                    <div class="box" id="4"></div>
-                    <div class="box" id="5"></div>
-                    <div class="box" id="6"></div>
-                    <div class="box" id="7"></div>
-                    <div class="box" id="8"></div>
-                </div>
-
-
-    
-                <script src="./public/js/main.js"></script>
+    <!----------------INFORMA O TAMANHO DO GRID DO JOGO-------------->
+    <div class="mostra_informa_matriz" >
+        <div class="card">
+            <div class="card-header" style="display:flex">
+            <input type="text" class="form-control" id="informa_matriz">
+            </div>
+            <div class="card-body">
+                <button class="btn btn-success" type="button" id="salva_matriz" onclick="teste1()">Salvar</button>
+            </div>
+        </div>
+    </div>
+    <!----------------CRIAÇÃO DO GRID DO JOGO-------------->
+    <div id="jogo">
+        
+    </div>
+      
+    <script src="./public/js/main.js"></script>
 </body>
-<footer>
-
+ <footer>
     <p>Criado por Pedro H. Moreira</p>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>

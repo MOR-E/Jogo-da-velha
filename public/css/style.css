@@ -5,7 +5,7 @@ nav {
 
 body{
     background-color: beige;
-
+    
 }
 
 footer {
@@ -38,4 +38,20 @@ footer {
 
 #pontuacao_ponto1, #pontuacao_ponto2 {
     font-size: 5em;
+}
+
+.mostra_informa_matriz {
+    width: 500px;
+    height: 235;
+    margin: auto;
+
+}
+
+.estilo_grid {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 50px;
+    background-color: white;
 }
