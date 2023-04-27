@@ -5,7 +5,7 @@ nav {
 
 body{
     background-color: beige;
-    
+
 }
 
 footer {
@@ -47,10 +47,15 @@ footer {
 
 }
 
+#jogo {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+
 .estilo_grid {
     width: 100px;
     height: 100px;
-    margin: 5px;
+    margin: 2px;
     cursor: pointer;
     font-size: 50px;
     background-color: white;

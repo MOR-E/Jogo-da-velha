@@ -36,11 +36,24 @@ function mostrarTexto2() {
 /*-------------CRIANDO O GRID DO JOGO-----------*/
 
 
-var salva_matriz = document.getElementById('salva_matriz');
-var tamanho_matriz = document.getElementById('informa_matriz').value;
-var grid_jogo = document.getElementsByClassName('jogo');
+function teste1() {
+    var salva_matriz = document.getElementById('salva_matriz');
+    var grid_jogo = document.getElementById('jogo');
 
+    var tamanho_matriz = new Array (document.getElementById('informa_matriz').value);
+    salva_matriz.addEventListener('click', function() {
+    console.log(tamanho_matriz);
 
+    grid_jogo.innerHTML = "";
+
+    for (var i = 0; i < tamanho_matriz; i++) {
+        var botao_do_item = document.createElement('button');
+        botao_do_item.classList.add('estilo_grid');
+        grid_jogo.appendChild(botao_do_item);
+
+    }
+})
+}
 
 /*function teste1() {
 
