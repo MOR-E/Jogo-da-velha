@@ -35,7 +35,6 @@ function mostrarTexto2() {
 
 /*-------------CRIANDO O GRID DO JOGO-----------*/
 
-
 function matriz() {
     var tamanho_matriz = document.getElementById('informa_matriz').value;
     var salva_matriz = document.getElementById('salva_matriz');
@@ -48,13 +47,24 @@ function matriz() {
 
     for (var i = 0; i < tamanho_matriz * tamanho_matriz ; i++) {
         var botao_do_item = document.createElement('button');
+        botao_do_item.setAttribute("data-posicao", i + 1);
         botao_do_item.classList.add('estilo_grid');
         grid_jogo.appendChild(botao_do_item);
     }
 })
-
-
 }
 
 
+/*const jogador_atual = document.querySelector(".jogador_atual");
+let selected;
+let player = "X";
 
+
+function inicio() {
+    selecionado = [];
+
+    jogador_atual.innerHTML = `Jogador da vez: ${player}`;
+    document.querySelectorAll(".jogo button").forEach(() => {
+        
+    })
+}*/
