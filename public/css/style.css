@@ -47,11 +47,6 @@ footer {
 
 }
 
-#jogo {
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-}
-
 .estilo_grid {
     width: 100px;
     height: 100px;
